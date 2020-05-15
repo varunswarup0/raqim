@@ -1,0 +1,290 @@
+html {
+  background: radial-gradient(ellipse at center, #58f9d1 0%, #47d3d3 100%);
+}
+body {
+  font-family: Nunito, Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  background-color: ;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.map {
+  position: relative;
+  max-width: 1100px;
+  margin: auto;
+  background-color: rgb(253, 252, 252);
+  border-radius: 2%;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.map img {
+  display: block;
+  width: 100%;
+}
+
+.map-popup {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 99;
+  width: 60%;
+  padding: 2rem;
+  background-color: #fff;
+  transition: all 300ms ease-in;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.22);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.map-popup > *:first-child {
+  margin-top: 0;
+}
+.map-popup > *:last-child {
+  margin-bottom: 0;
+}
+
+.map-popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.marker {
+  position: absolute;
+  z-index: 1;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  color: #fff;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: rgb(197, 71, 255);
+  transition: all 300ms;
+}
+
+.marker1 {
+  top: 30%;
+  left: 20%;
+}
+.marker2 {
+  top: 50%;
+  left: 60%;
+}
+.marker3 {
+  top: 44%;
+  left: 10%;
+}
+.marker4 {
+  top: 44%;
+  left: 30%;
+}
+.marker5 {
+  top: 57%;
+  left: 25%;
+}
+.marker6 {
+  top: 74%;
+  left: 36%;
+}
+.marker7 {
+  top: 74%;
+  left: 22%;
+}
+.marker8 {
+  top: 35%;
+  left: 60%;
+}
+.marker9 {
+  top: 18%;
+  left: 24%;
+}
+.marker10 {
+  top: 24%;
+  left: 26%;
+}
+.marker11 {
+  top: 30%;
+  left: 40%;
+}
+.marker12 {
+  top: 44%;
+  left: 60%;
+}
+.marker13 {
+  top: 44%;
+  left: 68%;
+}
+.marker14 {
+  top: 32%;
+  left: 86%;
+}
+.marker15 {
+  top: 88%;
+  left: 35%;
+}
+.marker16 {
+  top: 14%;
+  left: 30%;
+}
+.marker17 {
+  top: 64%;
+  left: 36%;
+}
+.marker18 {
+  top: 89%;
+  left: 27%;
+}
+.marker19 {
+  top: 50%;
+  left: 48%;
+}
+.marker20 {
+  top: 72%;
+  left: 18%;
+}
+.marker21 {
+  top: 27%;
+  left: 30%;
+}
+
+@media only screen and (min-width: 48em) {
+  .map-item {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+  }
+  .map-item .marker {
+    top: auto;
+    left: auto;
+  }
+
+  .map-item1 {
+    top: 30%;
+    left: 20%;
+  }
+  .map-item2 {
+    top: 50%;
+    left: 60%;
+  }
+  .map-item3 {
+    top: 44%;
+    left: 10%;
+  }
+  .map-item4 {
+    top: 44%;
+    left: 30%;
+  }
+  .map-item5 {
+    top: 57%;
+    left: 25%;
+  }
+  .map-item6 {
+    top: 74%;
+    left: 36%;
+  }
+  .map-item7 {
+    top: 74%;
+    left: 22%;
+  }
+  .map-item8 {
+    top: 35%;
+    left: 60%;
+  }
+  .map-item9 {
+    top: 18%;
+    left: 24%;
+  }
+  .map-item10 {
+    top: 24%;
+    left: 26%;
+  }
+  .map-item11 {
+    top: 30%;
+    left: 40%;
+  }
+  .map-item12 {
+    top: 44%;
+    left: 60%;
+  }
+  .map-item13 {
+    top: 44%;
+    left: 68%;
+  }
+  .map-item14 {
+    top: 32%;
+    left: 86%;
+  }
+  .map-item15 {
+    top: 88%;
+    left: 35%;
+  }
+  .map-item16 {
+    top: 14%;
+    left: 30%;
+  }
+  .map-item17 {
+    top: 64%;
+    left: 36%;
+  }
+  .map-item18 {
+    top: 89%;
+    left: 27%;
+  }
+  .map-item19 {
+    top: 50%;
+    left: 48%;
+  }
+  .map-item20 {
+    top: 72%;
+    left: 18%;
+  }
+  .map-item21 {
+    top: 27%;
+    left: 30%;
+  }
+
+  .map-popup {
+    position: absolute;
+    left: 58px;
+    width: 280px;
+    transform: translateY(-50%);
+  }
+  .map-popup:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -16px;
+    margin-top: -16px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px 16px 16px 0;
+    border-color: transparent #fff transparent transparent;
+  }
+
+  .map-popup.edge {
+    left: auto;
+    right: calc(100% + 24px);
+  }
+  .map-popup.edge:before {
+    left: auto;
+    right: -16px;
+    border-width: 16px 0 16px 16px;
+    border-color: transparent transparent transparent #fff;
+  }
+}
+
+.btn {
+  text-decoration: none;
+  color: #5643fc;
+}
+
+.btn:hover {
+  color: rgb(255, 0, 242);
+}
